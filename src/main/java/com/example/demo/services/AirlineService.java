@@ -1,6 +1,8 @@
-package com.example.demo.airline;
+package com.example.demo.services;
 
 
+import com.example.demo.model.Airline;
+import com.example.demo.repository.AirlineRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

@@ -1,4 +1,4 @@
-package com.example.demo.airport;
+package com.example.demo.model;
 
 
 import javax.persistence.*;
@@ -20,6 +20,8 @@ public class Airport {
     )
     private Long id;
     private String IATA_code;
+    private String code_iata;
+
     private String ICAO_code;
     private String name;
     private String city;

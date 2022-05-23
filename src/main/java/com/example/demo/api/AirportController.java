@@ -1,9 +1,9 @@
-package com.example.demo.airport;
+package com.example.demo.api;
 
+import com.example.demo.model.Airport;
+import com.example.demo.services.AirportService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -22,4 +22,11 @@ public class AirportController {
     public List<Airport> getAirports(){
         return airportService.getAirport();
     }
+
+    @PostMapping
+    public void addNewAirportInfo(@RequestBody Airport airport){
+        airportService.addNewAirport(airport);
+    }
+
+
 }

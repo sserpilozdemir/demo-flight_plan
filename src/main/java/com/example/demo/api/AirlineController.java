@@ -1,6 +1,8 @@
-package com.example.demo.airline;
+package com.example.demo.api;
 
 
+import com.example.demo.model.Airline;
+import com.example.demo.services.AirlineService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

@@ -1,11 +1,10 @@
-package com.example.demo.flight_plan;
+package com.example.demo.model;
 
 
-import org.apache.tomcat.jni.Local;
+import com.example.demo.model.SaveFlightRequest;
 
 import javax.persistence.*;
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 import java.time.LocalTime;
 
 @Entity
@@ -16,8 +15,10 @@ public class Flight {
     @SequenceGenerator(
             name = "flight_sequence",
             sequenceName = "flight_sequence",
+            initialValue = 1,
             allocationSize = 1
     )
+
     @GeneratedValue(
             strategy = GenerationType.SEQUENCE,
             generator = "flight_sequence"
@@ -57,6 +58,17 @@ public class Flight {
         this.arr_port = arr_port;
         this.arr_city = arr_city;
         this.est_arr_time = est_arr_time;
+    }
+
+    public  Flight(SaveFlightRequest request){
+        this.flight_date = request.getFlight_date();
+        this.aircraft_type = request.getAircraft_type();
+        this.dep_port = request.getDep_port();
+        this.dep_city = request.getDep_city();
+        this.est_dep_time = request.getEst_dep_time();
+        this.arr_port = request.getArr_port();
+        this.arr_city = request.getArr_city();
+        this.est_arr_time = request.getEst_arr_time();
     }
 
     public Long getId() {

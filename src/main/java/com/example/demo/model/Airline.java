@@ -1,4 +1,4 @@
-package com.example.demo.airline;
+package com.example.demo.model;
 
 
 import javax.persistence.*;
