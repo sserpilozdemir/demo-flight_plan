@@ -16,8 +16,8 @@ public class AirlineConfig {
             AirlineRepository repository) {
         return args -> {
             Airline pegasus = new Airline(
-                1L,
-                "PGS",
+                "PC",
+                "PGT",
                 "Pegasus Airlines",
                 "Turkey"
             );

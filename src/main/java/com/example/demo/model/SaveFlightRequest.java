@@ -4,6 +4,8 @@ import java.time.LocalDate;
 import java.time.LocalTime;
 
 public class SaveFlightRequest {
+
+    private String flight_number;
     private LocalDate flight_date;
     private String aircraft_type;
     private String dep_port;
@@ -12,6 +14,25 @@ public class SaveFlightRequest {
     private String arr_port;
     private String arr_city;
     private LocalTime est_arr_time;
+
+    public SaveFlightRequest() {
+    }
+
+    public SaveFlightRequest(String flight_number, LocalDate flight_date, String aircraft_type, String dep_port, String dep_city, LocalTime est_dep_time, String arr_port, String arr_city, LocalTime est_arr_time) {
+        this.flight_number = flight_number;
+        this.flight_date = flight_date;
+        this.aircraft_type = aircraft_type;
+        this.dep_port = dep_port;
+        this.dep_city = dep_city;
+        this.est_dep_time = est_dep_time;
+        this.arr_port = arr_port;
+        this.arr_city = arr_city;
+        this.est_arr_time = est_arr_time;
+    }
+
+    public String getFlight_number() {
+        return flight_number;
+    }
 
     public LocalDate getFlight_date() {
         return flight_date;
@@ -43,6 +64,10 @@ public class SaveFlightRequest {
 
     public LocalTime getEst_arr_time() {
         return est_arr_time;
+    }
+
+    public void setFlight_number(String flight_number) {
+        this.flight_number = flight_number;
     }
 
     public void setFlight_date(LocalDate flight_date) {
@@ -80,7 +105,8 @@ public class SaveFlightRequest {
     @Override
     public String toString() {
         return "SaveFlightRequest{" +
-                "flight_date=" + flight_date +
+                "flight_number='" + flight_number + '\'' +
+                ", flight_date=" + flight_date +
                 ", aircraft_type='" + aircraft_type + '\'' +
                 ", dep_port='" + dep_port + '\'' +
                 ", dep_city='" + dep_city + '\'' +

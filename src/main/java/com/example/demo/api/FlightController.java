@@ -30,6 +30,17 @@ public class FlightController {
         flightService.addNewFlight(flight);
     }
 
+    @DeleteMapping(path = "{flightId}")
+    public void deleteFlight(@PathVariable("flightId") Long flightId){
+        flightService.deleteFlight(flightId);
+    }
 
+    @PutMapping(path = "{flightId}")
+    public void updateFlight(
+            @PathVariable("flightId") Long flightId,
+            @RequestParam(required = false) String dep_port,
+            @RequestParam(required = false) String arr_port) {
+        flightService.updateFlight(flightId, dep_port, arr_port);
+    }
 
 }

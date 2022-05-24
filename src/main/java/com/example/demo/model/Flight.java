@@ -25,6 +25,8 @@ public class Flight {
     )
 
     private Long id;
+
+    private String flight_number;
     private LocalDate flight_date;
     private String aircraft_type;
     private String dep_port;
@@ -37,8 +39,9 @@ public class Flight {
     public Flight() {
     }
 
-    public Flight(Long id, LocalDate flight_date, String aircraft_type, String dep_port, String dep_city, LocalTime est_dep_time, String arr_port, String arr_city, LocalTime est_arr_time) {
+    public Flight(Long id, String flight_number, LocalDate flight_date, String aircraft_type, String dep_port, String dep_city, LocalTime est_dep_time, String arr_port, String arr_city, LocalTime est_arr_time) {
         this.id = id;
+        this.flight_number = flight_number;
         this.flight_date = flight_date;
         this.aircraft_type = aircraft_type;
         this.dep_port = dep_port;
@@ -49,7 +52,8 @@ public class Flight {
         this.est_arr_time = est_arr_time;
     }
 
-    public Flight(LocalDate flight_date, String aircraft_type, String dep_port, String dep_city, LocalTime est_dep_time, String arr_port, String arr_city, LocalTime est_arr_time) {
+    public Flight(String flight_number, LocalDate flight_date, String aircraft_type, String dep_port, String dep_city, LocalTime est_dep_time, String arr_port, String arr_city, LocalTime est_arr_time) {
+        this.flight_number = flight_number;
         this.flight_date = flight_date;
         this.aircraft_type = aircraft_type;
         this.dep_port = dep_port;
@@ -60,19 +64,13 @@ public class Flight {
         this.est_arr_time = est_arr_time;
     }
 
-    public  Flight(SaveFlightRequest request){
-        this.flight_date = request.getFlight_date();
-        this.aircraft_type = request.getAircraft_type();
-        this.dep_port = request.getDep_port();
-        this.dep_city = request.getDep_city();
-        this.est_dep_time = request.getEst_dep_time();
-        this.arr_port = request.getArr_port();
-        this.arr_city = request.getArr_city();
-        this.est_arr_time = request.getEst_arr_time();
-    }
 
     public Long getId() {
         return id;
+    }
+
+    public String getFlight_number() {
+        return flight_number;
     }
 
     public LocalDate getFlight_date() {
@@ -111,6 +109,10 @@ public class Flight {
         this.id = id;
     }
 
+    public void setFlight_number(String flight_number) {
+        this.flight_number = flight_number;
+    }
+
     public void setFlight_date(LocalDate flight_date) {
         this.flight_date = flight_date;
     }
@@ -147,6 +149,7 @@ public class Flight {
     public String toString() {
         return "Flight{" +
                 "id=" + id +
+                ", flight_number='" + flight_number + '\'' +
                 ", flight_date=" + flight_date +
                 ", aircraft_type='" + aircraft_type + '\'' +
                 ", dep_port='" + dep_port + '\'' +
@@ -157,4 +160,18 @@ public class Flight {
                 ", est_arr_time=" + est_arr_time +
                 '}';
     }
+
+
+    public  Flight(SaveFlightRequest request){
+        this.flight_number = request.getFlight_number();
+        this.flight_date = request.getFlight_date();
+        this.aircraft_type = request.getAircraft_type();
+        this.dep_port = request.getDep_port();
+        this.dep_city = request.getDep_city();
+        this.est_dep_time = request.getEst_dep_time();
+        this.arr_port = request.getArr_port();
+        this.arr_city = request.getArr_city();
+        this.est_arr_time = request.getEst_arr_time();
+    }
+
 }

@@ -38,11 +38,18 @@ public class AirportConfig {
                     "Adana",
                     "36°58′55″N 35°16′49″E"
             );
+            Airport trabzon = new Airport(
+                    "TZX",
+                    "LTCG",
+                    "Trabzon Airport",
+                    "Trabzon",
+                    "40.9951°N 39.7897°E"
+            );
 
 
 
             repository.saveAll(
-                    List.of(saw, adb, ada)
+                    List.of(saw, adb, ada, trabzon)
             );
         };
     }

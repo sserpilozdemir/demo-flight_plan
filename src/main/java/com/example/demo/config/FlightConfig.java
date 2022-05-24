@@ -19,6 +19,7 @@ public class FlightConfig {
             FlightRepository repository) {
         return args -> {
             Flight flight_1 =  new Flight(
+                    "PC1121",
                 LocalDate.of(2022, 11, 1),
                 "Boeing 747",
                 "SAW",
@@ -30,10 +31,11 @@ public class FlightConfig {
 
             );
             Flight flight_2 =  new Flight(
+                    "PC2344",
                     LocalDate.of(2022, 5, 1),
                     "Boeing 737",
-                    "IST",
-                    "Istanbul",
+                    "TZX",
+                    "Trabzon",
                     LocalTime.of(13, 0,0,0),
                     "ADB",
                     "Izmir",
@@ -41,18 +43,19 @@ public class FlightConfig {
 
             );
             Flight flight_3 =  new Flight(
-
+                    "PC9991",
                     LocalDate.of(2022, 6, 1),
                     "Boeing 737",
-                    "IST",
+                    "SAW",
                     "Istanbul",
                     LocalTime.of(13, 0,0,0),
-                    "ADB",
-                    "Izmir",
+                    "TXZ",
+                    "Trabzon",
                     LocalTime.of(15, 0, 0,0)
 
             );
             Flight flight_4 =  new Flight(
+                    "PC3323",
                     LocalDate.of(2022, 6, 11),
                     "Boeing 737",
                     "IST",

@@ -20,39 +20,26 @@ public class Airline {
             generator = "airline_sequence"
     )
     private Long id;
-    private String code;
+    private String iata_code;
+    private String icao_code;
     private String name;
     private String country;
 
     public Airline() {
     }
 
-    public Airline(Long id, String code, String name, String country) {
+    public Airline(Long id, String iata_code, String icao_code, String name, String country) {
         this.id = id;
-        this.code = code;
+        this.iata_code = iata_code;
+        this.icao_code = icao_code;
         this.name = name;
         this.country = country;
     }
 
-    public Airline(String code, String name, String country) {
-        this.code = code;
+    public Airline(String iata_code, String icao_code, String name, String country) {
+        this.iata_code = iata_code;
+        this.icao_code = icao_code;
         this.name = name;
-        this.country = country;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public void setCode(String code) {
-        this.code = code;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setCountry(String country) {
         this.country = country;
     }
 
@@ -60,8 +47,12 @@ public class Airline {
         return id;
     }
 
-    public String getCode() {
-        return code;
+    public String getIata_code() {
+        return iata_code;
+    }
+
+    public String getIcao_code() {
+        return icao_code;
     }
 
     public String getName() {
@@ -72,15 +63,37 @@ public class Airline {
         return country;
     }
 
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public void setIata_code(String iata_code) {
+        this.iata_code = iata_code;
+    }
+
+    public void setIcao_code(String icao_code) {
+        this.icao_code = icao_code;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setCountry(String country) {
+        this.country = country;
+    }
+
     @Override
     public String toString() {
         return "Airline{" +
                 "id=" + id +
-                ", code='" + code + '\'' +
+                ", iata_code='" + iata_code + '\'' +
+                ", icao_code='" + icao_code + '\'' +
                 ", name='" + name + '\'' +
                 ", country='" + country + '\'' +
                 '}';
     }
+
 }
 
 
