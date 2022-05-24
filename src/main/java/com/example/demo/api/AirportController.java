@@ -1,6 +1,7 @@
 package com.example.demo.api;
 
 import com.example.demo.model.Airport;
+import com.example.demo.model.SaveAirportRequest;
 import com.example.demo.services.AirportService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -24,7 +25,7 @@ public class AirportController {
     }
 
     @PostMapping
-    public void addNewAirportInfo(@RequestBody Airport airport){
+    public void addNewAirportInfo(@RequestBody SaveAirportRequest airport){
         airportService.addNewAirport(airport);
     }
 

@@ -11,6 +11,7 @@ public class Airline {
     @SequenceGenerator(
             name = "airline_sequence",
             sequenceName = "airline_sequence",
+            initialValue = 1,
             allocationSize = 1
     )
 

@@ -11,6 +11,7 @@ public class Airport {
     @SequenceGenerator(
             name = "airport_sequence",
             sequenceName = "airport_sequence",
+            initialValue = 1,
             allocationSize = 1
     )
 
@@ -20,8 +21,6 @@ public class Airport {
     )
     private Long id;
     private String IATA_code;
-    private String code_iata;
-
     private String ICAO_code;
     private String name;
     private String city;
@@ -45,6 +44,14 @@ public class Airport {
         this.name = name;
         this.city = city;
         this.coordinates = coordinates;
+    }
+
+    public Airport(SaveAirportRequest airportRequest) {
+        this.IATA_code = airportRequest.getIATA_code();
+        this.ICAO_code = airportRequest.getICAO_code();
+        this.name = airportRequest.getName();
+        this.city = airportRequest.getCity();
+        this.coordinates = airportRequest.getCoordinates();
     }
 
     public void setId(Long id) {
