@@ -41,8 +41,45 @@
 <img width="311" alt="Screenshot 2022-05-25 at 00 35 29" src="https://user-images.githubusercontent.com/69975085/170147930-e421cc41-ead9-49b2-91b9-b7596f7d1686.png">
 
 
+# CRUD OPERATIONS
+
+* Post Method For Flights
 
 
 
+https://user-images.githubusercontent.com/69975085/170149016-c5c867ec-26ba-4430-81f7-79e0761961b9.mp4
+
+
+
+* Put Method For Flights
+
+
+https://user-images.githubusercontent.com/69975085/170148257-ea9e4c86-3873-4562-bbbf-c421996074e9.mp4
+
+
+
+* Delete Method For Flights
+
+
+
+
+https://user-images.githubusercontent.com/69975085/170148570-d3da4dcb-a289-4702-8700-036a0402281c.mp4
+
+
+
+
+* Put Method For Airports
+
+
+
+
+https://user-images.githubusercontent.com/69975085/170148786-fa0c9bd3-7f1a-4302-b1f5-96803e9ab83f.mp4
+
+
+* Put Method For Airtports
+
+
+
+https://user-images.githubusercontent.com/69975085/170149191-191e5e9d-5a05-4261-8e3a-89e7868e2929.mp4
 
 
