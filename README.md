@@ -19,26 +19,27 @@
 * Aircraft type: Boeing or Airbus brand airplane model
 
 
-![](../../Screenshot 2022-05-24 at 23.41.40.png)
 
+<img width="393" alt="Screenshot 2022-05-24 at 23 41 40" src="https://user-images.githubusercontent.com/69975085/170147966-2a064f1f-d5b3-49f7-b085-8f234eefd5a7.png">
 
 # DATABASE TABLES
 
 * POSTGRES
 
-![](../../Screenshot 2022-05-25 at 01.37.56.png)
+<img width="588" alt="Screenshot 2022-05-25 at 01 37 56" src="https://user-images.githubusercontent.com/69975085/170148021-054ac534-737c-4b88-b58d-03cc7536bbf0.png">
 
 * FLIGHT
 
-![](../../Screenshot 2022-05-25 at 00.35.52.png)
+<img width="1333" alt="Screenshot 2022-05-25 at 00 35 52" src="https://user-images.githubusercontent.com/69975085/170147846-774d7d87-f907-49da-97a4-b856ae7b315a.png">
 
 * AIRPORT
 
-![](../../Screenshot 2022-05-25 at 00.35.41.png)
+<img width="863" alt="Screenshot 2022-05-25 at 00 35 41" src="https://user-images.githubusercontent.com/69975085/170147885-e0ece585-b4dd-4d7b-baf0-bfdd3a0ba8a4.png">
 
 * AIRLINE
 
-![](../../Screenshot 2022-05-25 at 00.35.29.png)
+<img width="311" alt="Screenshot 2022-05-25 at 00 35 29" src="https://user-images.githubusercontent.com/69975085/170147930-e421cc41-ead9-49b2-91b9-b7596f7d1686.png">
+
 
 
 
