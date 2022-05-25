@@ -8,7 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-
+//endpointleri ayarlamaya yariyor, endpointten aldigimiz datalari servis katmanina gonderip nasil bir logic olacaksa ona gore bir
 @RestController
 @RequestMapping(path = "/api/v1/flights")
 public class FlightController {

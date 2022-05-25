@@ -5,7 +5,7 @@ import java.time.LocalTime;
 
 public class SaveFlightRequest {
 
-    private String flight_number;
+    private String airline_code;
     private LocalDate flight_date;
     private String aircraft_type;
     private String dep_port;
@@ -18,8 +18,8 @@ public class SaveFlightRequest {
     public SaveFlightRequest() {
     }
 
-    public SaveFlightRequest(String flight_number, LocalDate flight_date, String aircraft_type, String dep_port, String dep_city, LocalTime est_dep_time, String arr_port, String arr_city, LocalTime est_arr_time) {
-        this.flight_number = flight_number;
+    public SaveFlightRequest(String airline_code, LocalDate flight_date, String aircraft_type, String dep_port, String dep_city, LocalTime est_dep_time, String arr_port, String arr_city, LocalTime est_arr_time) {
+        this.airline_code = airline_code;
         this.flight_date = flight_date;
         this.aircraft_type = aircraft_type;
         this.dep_port = dep_port;
@@ -30,8 +30,8 @@ public class SaveFlightRequest {
         this.est_arr_time = est_arr_time;
     }
 
-    public String getFlight_number() {
-        return flight_number;
+    public String getAirline_code() {
+        return airline_code;
     }
 
     public LocalDate getFlight_date() {
@@ -66,8 +66,8 @@ public class SaveFlightRequest {
         return est_arr_time;
     }
 
-    public void setFlight_number(String flight_number) {
-        this.flight_number = flight_number;
+    public void setAirline_code(String airline_code) {
+        this.airline_code = airline_code;
     }
 
     public void setFlight_date(LocalDate flight_date) {
@@ -105,7 +105,7 @@ public class SaveFlightRequest {
     @Override
     public String toString() {
         return "SaveFlightRequest{" +
-                "flight_number='" + flight_number + '\'' +
+                "flight_number='" + airline_code + '\'' +
                 ", flight_date=" + flight_date +
                 ", aircraft_type='" + aircraft_type + '\'' +
                 ", dep_port='" + dep_port + '\'' +

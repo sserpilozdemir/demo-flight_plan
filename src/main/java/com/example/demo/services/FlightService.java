@@ -31,7 +31,8 @@ public class FlightService {
                 .countByDepAndArrPort(
                         flightRequest.getDep_port(),
                         flightRequest.getArr_port(),
-                        flightRequest.getFlight_date());
+                        flightRequest.getFlight_date(),
+                        flightRequest.getAirline_code());
 
         if (flightCount >= 3 ){
             throw new IllegalStateException(
@@ -74,8 +75,6 @@ public class FlightService {
         if (arr_port != null &&
                 arr_port.length() > 0 &&
                 !Objects.equals(flight.getArr_port(), arr_port)) {
-            //optional type for not null while updating
-            Optional<Flight> flightOptional = flightRepository.findFlightByPort(arr_port);
 
         flight.setArr_port(arr_port);
     }

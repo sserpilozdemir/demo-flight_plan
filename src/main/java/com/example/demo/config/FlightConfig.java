@@ -19,7 +19,7 @@ public class FlightConfig {
             FlightRepository repository) {
         return args -> {
             Flight flight_1 =  new Flight(
-                    "PC1121",
+                    "Pegasus Airlines",
                 LocalDate.of(2022, 11, 1),
                 "Boeing 747",
                 "SAW",
@@ -31,7 +31,7 @@ public class FlightConfig {
 
             );
             Flight flight_2 =  new Flight(
-                    "PC2344",
+                    "Pegasus Airlines",
                     LocalDate.of(2022, 5, 1),
                     "Boeing 737",
                     "TZX",
@@ -43,7 +43,7 @@ public class FlightConfig {
 
             );
             Flight flight_3 =  new Flight(
-                    "PC9991",
+                    "Pegasus Airlines",
                     LocalDate.of(2022, 6, 1),
                     "Boeing 737",
                     "SAW",
@@ -55,7 +55,7 @@ public class FlightConfig {
 
             );
             Flight flight_4 =  new Flight(
-                    "PC3323",
+                    "Pegasus Airlines",
                     LocalDate.of(2022, 6, 11),
                     "Boeing 737",
                     "IST",
