@@ -2,9 +2,8 @@ package com.example.demo.services;
 
 
 import com.example.demo.model.Airport;
-import com.example.demo.model.SaveAirportRequest;
+import com.example.demo.requestsandresponse.SaveAirportRequest;
 import com.example.demo.repository.AirportRepository;
-import com.sun.istack.NotNull;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

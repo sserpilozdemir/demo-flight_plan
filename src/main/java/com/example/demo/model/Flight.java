@@ -1,6 +1,8 @@
 package com.example.demo.model;
 
 
+import com.example.demo.requestsandresponse.SaveFlightRequest;
+
 import javax.persistence.*;
 import java.time.LocalDate;
 import java.time.LocalTime;

@@ -1,7 +1,7 @@
 package com.example.demo.api;
 
 import com.example.demo.model.Airport;
-import com.example.demo.model.SaveAirportRequest;
+import com.example.demo.requestsandresponse.SaveAirportRequest;
 import com.example.demo.services.AirportService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

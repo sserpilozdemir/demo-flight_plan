@@ -1,6 +1,8 @@
 package com.example.demo.model;
 
 
+import com.example.demo.requestsandresponse.SaveAirportRequest;
+
 import javax.persistence.*;
 
 @Entity
