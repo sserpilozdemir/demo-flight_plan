@@ -19,8 +19,9 @@
 * Aircraft type: Boeing or Airbus brand airplane model
 
 
+<img width="390" alt="Screenshot 2022-05-26 at 23 28 02" src="https://user-images.githubusercontent.com/69975085/170574645-9774c5d4-b57f-43c0-9788-9794787b85ab.png">
 
-<img width="393" alt="Screenshot 2022-05-24 at 23 41 40" src="https://user-images.githubusercontent.com/69975085/170147966-2a064f1f-d5b3-49f7-b085-8f234eefd5a7.png">
+
 
 # DATABASE TABLES
 
