@@ -2,7 +2,7 @@
 
 # Libraries
 * JPA: mapping, storing, updating and accessing to database.
-* Postgres: relational database system for java objects.
+* H2: relational database system for java objects.
 * Web: building web application
 * Maven: packaging executable jar or war archives, running Spring Boot application and generate build information.
 
@@ -24,21 +24,31 @@
 
 # DATABASE TABLES
 
-* POSTGRES
+* H2
 
-<img width="588" alt="Screenshot 2022-05-25 at 01 37 56" src="https://user-images.githubusercontent.com/69975085/170148021-054ac534-737c-4b88-b58d-03cc7536bbf0.png">
+
+<img width="578" alt="Screenshot 2022-05-26 at 23 21 05" src="https://user-images.githubusercontent.com/69975085/170573591-5577cb38-f525-45be-9a44-a1252e08904c.png">
+
+
 
 * FLIGHT
 
-<img width="1333" alt="Screenshot 2022-05-25 at 00 35 52" src="https://user-images.githubusercontent.com/69975085/170147846-774d7d87-f907-49da-97a4-b856ae7b315a.png">
+
+<img width="883" alt="Screenshot 2022-05-26 at 23 19 36" src="https://user-images.githubusercontent.com/69975085/170573617-57c81cac-3b44-4864-b516-fc5da5e6b561.png">
+
+
 
 * AIRPORT
 
-<img width="863" alt="Screenshot 2022-05-25 at 00 35 41" src="https://user-images.githubusercontent.com/69975085/170147885-e0ece585-b4dd-4d7b-baf0-bfdd3a0ba8a4.png">
+<img width="635" alt="Screenshot 2022-05-26 at 23 19 52" src="https://user-images.githubusercontent.com/69975085/170573660-8fa382cf-118d-4be5-8c6e-b8687a563ba6.png">
+
+
+
 
 * AIRLINE
 
-<img width="311" alt="Screenshot 2022-05-25 at 00 35 29" src="https://user-images.githubusercontent.com/69975085/170147930-e421cc41-ead9-49b2-91b9-b7596f7d1686.png">
+
+<img width="446" alt="Screenshot 2022-05-26 at 23 20 03" src="https://user-images.githubusercontent.com/69975085/170573711-84ff84d3-a8ef-4817-aab0-1f2dae5d8277.png">
 
 
 # CRUD OPERATIONS
@@ -51,35 +61,6 @@ https://user-images.githubusercontent.com/69975085/170149016-c5c867ec-26ba-4430-
 
 
 
-* Put Method For Flights
 
-
-https://user-images.githubusercontent.com/69975085/170148257-ea9e4c86-3873-4562-bbbf-c421996074e9.mp4
-
-
-
-* Delete Method For Flights
-
-
-
-
-https://user-images.githubusercontent.com/69975085/170148570-d3da4dcb-a289-4702-8700-036a0402281c.mp4
-
-
-
-
-* Put Method For Airports
-
-
-
-
-https://user-images.githubusercontent.com/69975085/170148786-fa0c9bd3-7f1a-4302-b1f5-96803e9ab83f.mp4
-
-
-* Put Method For Airtports
-
-
-
-https://user-images.githubusercontent.com/69975085/170149191-191e5e9d-5a05-4261-8e3a-89e7868e2929.mp4
 
 
