@@ -44,38 +44,4 @@ public class FlightService {
 
     }
 
-    public void deleteFlight(Long flightId) {
-        boolean exists = flightRepository.existsById(flightId);
-
-        if (!exists) {
-            throw  new IllegalStateException(
-                    " flight with this id "  + flightId + " does not exist! "
-            );
-        }
-        flightRepository.deleteById(flightId);
-    }
-
-
-    @Transactional
-    public void updateFlight(Long flightId,
-                             String dep_port,
-                             String arr_port) {
-        Flight flight = flightRepository.findById(flightId)
-                .orElseThrow(() -> new IllegalStateException(
-                        " flight with id " + flightId + " does not exist! "
-                ));
-
-        if (dep_port != null &&
-                dep_port.length() > 0 &&
-                !Objects.equals(flight.getDep_port(), dep_port)) {
-            flight.setDep_port(dep_port);
-        }
-
-        if (arr_port != null &&
-                arr_port.length() > 0 &&
-                !Objects.equals(flight.getArr_port(), arr_port)) {
-
-        flight.setArr_port(arr_port);
-    }
-    }
 }

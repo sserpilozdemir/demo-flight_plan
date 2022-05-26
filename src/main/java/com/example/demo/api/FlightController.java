@@ -8,7 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-//endpointleri ayarlamaya yariyor, endpointten aldigimiz datalari servis katmanina gonderip nasil bir logic olacaksa ona gore bir
+
 @RestController
 @RequestMapping(path = "/api/v1/flights")
 public class FlightController {
@@ -30,17 +30,6 @@ public class FlightController {
         flightService.addNewFlight(flight);
     }
 
-    @DeleteMapping(path = "{flightId}")
-    public void deleteFlight(@PathVariable("flightId") Long flightId){
-        flightService.deleteFlight(flightId);
-    }
 
-    @PutMapping(path = "{flightId}")
-    public void updateFlight(
-            @PathVariable("flightId") Long flightId,
-            @RequestParam(required = false) String dep_port,
-            @RequestParam(required = false) String arr_port) {
-        flightService.updateFlight(flightId, dep_port, arr_port);
-    }
 
 }

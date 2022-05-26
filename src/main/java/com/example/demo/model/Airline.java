@@ -4,11 +4,10 @@ package com.example.demo.model;
 import javax.persistence.*;
 
 @Entity
-@Table // databaseden gidip select yaptiginda insert attiginda o id varsa o objeyi mesela upd ediyo
+@Table
 public class Airline {
 
-    //primary key unique id 1 den basla 12345 gibi
-    @Id //tablodaki primary id gosterir
+    @Id
     @SequenceGenerator(
             name = "airline_sequence",
             sequenceName = "airline_sequence",

@@ -29,18 +29,5 @@ public class AirportController {
         airportService.addNewAirport(airport);
     }
 
-    @DeleteMapping(path = "{airportId}")
-    public void deleteAirportInfo(@PathVariable("airportId") Long airportId){
-        airportService.deleteAirportInfo(airportId);
-    }
-
-
-    @PutMapping(path = "{airportId}")
-    public  void updateAirport(
-            @PathVariable("airportId") Long airportId,
-            @RequestParam(required = false) String name,
-            @RequestParam(required = false) String city) {
-        airportService.updateAirport(airportId, name, city);
-    }
 
 }
