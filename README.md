@@ -51,17 +51,3 @@
 
 <img width="446" alt="Screenshot 2022-05-26 at 23 20 03" src="https://user-images.githubusercontent.com/69975085/170573711-84ff84d3-a8ef-4817-aab0-1f2dae5d8277.png">
 
-
-# CRUD OPERATIONS
-
-* Post Method For Flights
-
-
-
-https://user-images.githubusercontent.com/69975085/170149016-c5c867ec-26ba-4430-81f7-79e0761961b9.mp4
-
-
-
-
-
-
